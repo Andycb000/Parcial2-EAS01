@@ -11,14 +11,7 @@ using namespace std;
 int main()
 {
     srand(time(0)); // Seed para generar valores aleatorios
-
-    /*
-        Crear al menos 2 jugadores con diferentes nombres, vida y ataque.
-        Los jugadores deben atacarse entre sí, tomando turnos, hasta que uno pierda toda su vida.
-        En cuanto la vida del jugador se reduzca a 0 el programa muestra al ganador y se termina.
-        No importa quien ataca primero.
-    */
-
+   
     Jugador j1(100, 10, "Mario");
     Jugador j2(100, 10, "Carlos");
 
@@ -30,7 +23,6 @@ int main()
             cout << j1.nombre << " es el ganador" << endl;
             break;
         }
-
         j2.atacarJugador(j1);
         if (j1.vida <= 0)
         {

@@ -1,3 +1,4 @@
+#include "base.h"
 #include "jugador.h"
 #include "enemigo.h"
 #include <iostream>
@@ -58,7 +59,7 @@ void Jugador::atacarEnemigo(Enemigo &en)
     }
     else
     {
-        j2.vida -= this->attack;
-        cout << this->nombre << " ataco a " << en.nombre << " e hizo " << this->attack << " de danio, vida restante de " << en.nombre << " = " << j2.vida << endl;
+    en.vida -= this->attack;
+        cout << this->nombre << " ataco a " << en.nombre << " e hizo " << this->attack << " de danio, vida restante de " << en.nombre << " = " << en.vida << endl;
     }
 }

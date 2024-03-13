@@ -3,12 +3,10 @@
 
 #include "jugador.h"
 
-class Enemigo
+class Base;
+class Enemigo, public Base
 {
     public:
-    int vida;
-    int ataque;
-    string nombre;
 
     Enemigo();
     Enemigo(int hp, int attack, string nom);
